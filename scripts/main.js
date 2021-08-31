@@ -15,18 +15,6 @@ for (const link of links) {
   });
 }
 
-// header scroll
-const header = document.querySelector('#header');
-const navHeight = header.offsetHeight;
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY >= navHeight) {
-    header.classList.add('scroll');
-  } else {
-    header.classList.remove('scroll');
-  }
-});
-
 // Swiper init
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
@@ -52,12 +40,31 @@ scrollReveal.reveal(
   { interval: 100 },
 );
 
-// Button back to top
-const btnToTop = document.querySelector('.back-to-top');
-window.addEventListener('scroll', () => {
+// Header scroll function
+function changeHeaderWhenScroll() {
+  const header = document.querySelector('#header');
+  const navHeight = header.offsetHeight;
+
+  if (window.scrollY >= navHeight) {
+    header.classList.add('scroll');
+  } else {
+    header.classList.remove('scroll');
+  }
+}
+
+// Button back to top function
+function backToTop() {
+  const btnToTop = document.querySelector('.back-to-top');
+
   if (window.scrollY >= 560) {
     btnToTop.classList.add('show');
   } else {
     btnToTop.classList.remove('show');
   }
+}
+
+// Window when scroll
+window.addEventListener('scroll', () => {
+  changeHeaderWhenScroll();
+  backToTop();
 });
