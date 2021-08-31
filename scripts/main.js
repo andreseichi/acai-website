@@ -48,6 +48,16 @@ const scrollReveal = ScrollReveal({
 });
 
 scrollReveal.reveal(
-  `#home .image, #home .text, #about .image, #about .text, #products header, #products .card, #testimonials header, #testimonials .testimonials, #contact .text, #contact .contacts`,
+  `#home .image, #home .text, #about .image, #about .text, #products header, #products .card, #testimonials header, #testimonials .testimonials, #contact .text, #contact .contacts, footer .brand, footer .social`,
   { interval: 100 },
 );
+
+// Button back to top
+const btnToTop = document.querySelector('.back-to-top');
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= 560) {
+    btnToTop.classList.add('show');
+  } else {
+    btnToTop.classList.remove('show');
+  }
+});
