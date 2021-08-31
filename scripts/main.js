@@ -26,3 +26,26 @@ window.addEventListener('scroll', () => {
     header.classList.remove('scroll');
   }
 });
+
+// Swiper init
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  keyboard: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});

@@ -16,8 +16,15 @@
       rel="stylesheet"
     />
 
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
     <!-- Styles -->
     <link rel="stylesheet" href="./styles/style.css" />
+
     <title>Açaí do tio</title>
   </head>
 
@@ -145,62 +152,66 @@
       <div class="divider-1"></div>
 
       <section class="section" id="testimonials">
-        <div class="container grid">
+        <div class="container">
           <header>
             <h2 class="title">Depoimentos de clientes</h2>
           </header>
-          <div class="testimonials">
-            <div class="testimonial">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Aspernatur ipsum voluptatibus ex voluptatum velit molestias
-                  aut cum nobis amet enim!
-                </p>
-                <cite>
-                  <img
-                    src="./assets/images/fotos/34.jpg"
-                    alt="Foto de cliente"
-                  />
-                  Alguma Pessoa
-                </cite>
-              </blockquote>
+          <div class="testimonials swiper">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Aspernatur ipsum voluptatibus ex voluptatum velit molestias
+                    aut cum nobis amet enim!
+                  </p>
+                  <cite>
+                    <img
+                      src="./assets/images/fotos/34.jpg"
+                      alt="Foto de cliente"
+                    />
+                    Alguma Pessoa
+                  </cite>
+                </blockquote>
+              </div>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                    quisquam illum unde tempora rerum repudiandae praesentium
+                    dolor, corrupti et fuga.
+                  </p>
+                  <cite>
+                    <img
+                      src="./assets/images/fotos/52.jpg"
+                      alt="Foto de cliente"
+                    />
+                    Segunda Pessoa
+                  </cite>
+                </blockquote>
+              </div>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quibusdam ducimus est voluptatum eius fugit delectus numquam
+                    optio at, eaque ab?
+                  </p>
+                  <cite>
+                    <img
+                      src="./assets/images/fotos/82.jpg"
+                      alt="Foto de cliente"
+                    />
+                    Terceira Pessoa
+                  </cite>
+                </blockquote>
+              </div>
             </div>
-            <div class="testimonial">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                  quisquam illum unde tempora rerum repudiandae praesentium
-                  dolor, corrupti et fuga.
-                </p>
-                <cite>
-                  <img
-                    src="./assets/images/fotos/52.jpg"
-                    alt="Foto de cliente"
-                  />
-                  Segunda Pessoa
-                </cite>
-              </blockquote>
-            </div>
-            <div class="testimonial">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Quibusdam ducimus est voluptatum eius fugit delectus numquam
-                  optio at, eaque ab?
-                </p>
-                <cite>
-                  <img
-                    src="./assets/images/fotos/82.jpg"
-                    alt="Foto de cliente"
-                  />
-                  Terceira Pessoa
-                </cite>
-              </blockquote>
-            </div>
+
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
@@ -208,6 +219,8 @@
 
     <footer></footer>
 
+    <!-- swiper plugin -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>
