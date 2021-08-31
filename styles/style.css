@@ -185,6 +185,10 @@ nav .menu ul {
   color: var(--base-color);
 }
 
+.logo-alt span {
+  color: var(--body-color);
+}
+
 /* SHOW MENU */
 nav.show .menu {
   opacity: 1;
@@ -430,4 +434,29 @@ main {
 
 #contact ul li i {
   color: var(--base-color);
+}
+
+/* FOOTER */
+footer {
+  background: var(--base-color);
+}
+
+footer .brand p {
+  color: var(--text-color-light);
+  margin-bottom: 0.75rem;
+}
+
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+}
+
+footer .social {
+  display: flex;
+  gap: 2rem;
 }
