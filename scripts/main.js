@@ -38,3 +38,16 @@ const swiper = new Swiper('.swiper', {
   },
   keyboard: true,
 });
+
+// Scrollreveal -> mostrar elementos com scroll da page
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+  reset: true,
+});
+
+scrollReveal.reveal(
+  `#home .image, #home .text, #about .image, #about .text, #products header, #products .card, #testimonials header, #testimonials .testimonials, #contact .text, #contact .contacts`,
+  { interval: 100 },
+);
