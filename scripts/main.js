@@ -36,7 +36,7 @@ const scrollReveal = ScrollReveal({
 });
 
 scrollReveal.reveal(
-  `#home .image, #home .text, #about .image, #about .text, #products header, #products .card, #testimonials header, #testimonials .testimonials, #contact .text, #contact .contacts, footer .brand, footer .social`,
+  `#home .image, #home .text, #about .image, #about .text, #products header, #products .cards, #testimonials header, #testimonials .testimonials, #contact .text, #contact .contacts, footer .brand, footer .social`,
   { interval: 100 },
 );
 
