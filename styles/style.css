@@ -594,8 +594,36 @@ footer .social a:hover {
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* CONTACT */
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  #contact .text {
+    max-width: 25rem;
+  }
+
+  /* FOOTER */
+  footer.section {
+    padding-right: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    font-size: 2.25rem;
+  }
 }
-/* large device: 992+ */
+
+/* large devices: 1023+ */
+
+/* large devices: 992+ */
 @media (min-width: 992px) {
   :root {
     --title-font-size: 2.25rem;
