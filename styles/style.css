@@ -123,6 +123,10 @@ body {
   background-color: var(--body-color);
 }
 
+#header.scroll {
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
+}
+
 /* NAVIGATION */
 nav {
   width: 100%;
