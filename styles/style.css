@@ -517,6 +517,7 @@ footer .social a:hover {
     margin-left: auto;
     margin-right: auto;
   }
+
   .section {
     padding: 10rem 0;
   }
@@ -637,4 +638,32 @@ footer .social a:hover {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
   }
+
+  /* NAV */
+  nav .menu {
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem var(--body-font);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav .menu ul li a.title.active {
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+  }
+
+  nav .icon-menu {
+    display: none;
+  }
 }
+
+/* Medium devices: 767+ */
